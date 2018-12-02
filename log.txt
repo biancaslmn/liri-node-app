@@ -1,0 +1,490 @@
+Parkway Drive
+----------------
+Venue: Sporthalle
+Location: Hamburg, Germany
+Date: 01/25/2019
+----------------
+Venue: Arena
+Location: Leipzig, Germany
+Date: 01/26/2019
+----------------
+Venue: Jahrhunderthalle
+Location: Frankfurt, Germany
+Date: 01/27/2019
+----------------
+Venue: o2 Apollo
+Location: Manchester, United Kingdom
+Date: 01/29/2019
+----------------
+Venue: o2 Apollo 
+Location: Manchester, United Kingdom
+Date: 01/30/2019
+----------------
+Venue: Motorpoint Arena
+Location: Nottingham, United Kingdom
+Date: 01/31/2019
+----------------
+Venue: Motorpoint Arena
+Location: Cardiff, United Kingdom
+Date: 02/01/2019
+----------------
+Venue: Alexandra Palace
+Location: London, United Kingdom
+Date: 02/02/2019
+----------------
+Venue: Olympia
+Location: Paris, France
+Date: 02/04/2019
+----------------
+Venue: Forest National
+Location: Brussels, Belgium
+Date: 02/05/2019
+----------------
+Venue: AFAS Live
+Location: Amsterdam, Netherlands
+Date: 02/06/2019
+----------------
+Venue: Palladium
+Location: Cologne, Germany
+Date: 02/08/2019
+----------------
+Venue: Palladium
+Location: Cologne, Germany
+Date: 02/09/2019
+----------------
+Venue: Schleyerhalle
+Location: Stuttgart, Germany
+Date: 02/11/2019
+----------------
+Venue: Halle 622  
+Location: Zürich, Switzerland
+Date: 02/12/2019
+----------------
+Venue: Alcatraz
+Location: Milano, Italy
+Date: 02/13/2019
+----------------
+Venue: Zenith
+Location: Munich, Germany
+Date: 02/15/2019
+----------------
+Venue: Zenith
+Location: Munich, Germany
+Date: 02/16/2019
+----------------
+Venue: Gasometer
+Location: Vienna, Austria
+Date: 02/17/2019
+----------------
+Venue: Forum Karlin
+Location: Prague, Czech Republic
+Date: 02/18/2019
+----------------
+Venue: Sonic Temple Art + Music Festival
+Location: Columbus, OH, United States
+Date: 05/17/2019
+----------------
+Venue: RESURRECTION FEST
+Location: Viveiro, Spain
+Date: 07/04/2019
+----------------
+Venue: Wacken Open Air
+Location: Wacken, Germany
+Date: 08/03/2019
+----------------
+Thank u, next
+----------------
+Artist: Ariana Grande
+Song Name: thank u, next
+Preview of Song: null
+Album Name: thank u, next
+----------------
+Artist: Ariana Grande
+Song Name: thank u, next
+Preview of Song: null
+Album Name: thank u, next
+----------------
+Artist: YONAS
+Song Name: thank u, next - Remix
+Preview of Song: https://p.scdn.co/mp3-preview/53752eae19b82e392f9c98fdac77ef65fed842a5?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next (Remix)
+----------------
+Artist: Joseph Vincent
+Song Name: thank u, next
+Preview of Song: https://p.scdn.co/mp3-preview/9509aa587980ebd8b6c12d9b4a404b0bb9dd42b2?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next
+----------------
+Artist: Jason Chen
+Song Name: thank u, next
+Preview of Song: https://p.scdn.co/mp3-preview/17e07fc1832f9dbe52d22b2682fbc883cce385c7?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next
+----------------
+Artist: Davina Michelle
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/6cc26ee5c11d8e396a46fdef926f36ce706c2cf2?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next
+----------------
+Artist: Emma Heesters
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/4003223a6b08e5bb7eb4f5e1d2e7d4cf8520dbab?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next
+----------------
+Artist: Oliviya Nicole
+Song Name: thank u, next
+Preview of Song: https://p.scdn.co/mp3-preview/b903e6065540cf511a8a0c3efe8e19d8e7d45090?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next
+----------------
+Artist: 8-Bit Arcade
+Song Name: Thank U, Next (8-Bit Ariana Grande Emulation)
+Preview of Song: https://p.scdn.co/mp3-preview/767a8158cbf9efd3aced0fb9c6bf8d841da940c6?cid=5f8211b2042544179e780b7160dac35e
+Album Name: By Request, Vol. 12
+----------------
+Artist: Fly By Nightcore
+Song Name: thank u, next
+Preview of Song: https://p.scdn.co/mp3-preview/cc62e942a414b8cad316a064296d8c4856cd1cfe?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next
+----------------
+Artist: Alexander Stewart
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/9c87b98cfe323b9da769cba806836a8cc46f8406?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next
+----------------
+Artist: Jonah Baker
+Song Name: thank u, next (Acoustic Version)
+Preview of Song: https://p.scdn.co/mp3-preview/74e4e361c3847d3e18b37a7fd4d2281aec61b287?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next (Acoustic Version)
+----------------
+Artist: DJ Boomin
+Song Name: Thank u, next - Instrumental
+Preview of Song: https://p.scdn.co/mp3-preview/1ea45574ea4c7f79db290005bc22e07f568fc54f?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank u, next
+----------------
+Artist: Ebony Day
+Song Name: thank u, next - Acoustic
+Preview of Song: https://p.scdn.co/mp3-preview/378e670fe2f0aebb0e1c7a9197108478167c6b70?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next (Acoustic)
+----------------
+Artist: The Trap Remix Guys
+Song Name: Thank U, Next - Trap Remix Homage to Ariana Grande
+Preview of Song: https://p.scdn.co/mp3-preview/e4017dd1f6483a3b8921458d32a768e601928a4d?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next (Trap Remix Homage to Ariana Grande)
+----------------
+Artist: Halocene
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/ae0dcfbeb10f82e16ec121409ec95c14910607c3?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next
+----------------
+Artist: The Blue Notes
+Song Name: thank u, next
+Preview of Song: https://p.scdn.co/mp3-preview/472013f1e2065da7c155781b30b0638ce2604b7c?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next (Piano Rendition)
+----------------
+Artist: Metrixx
+Song Name: Thank U, Next - Instrumental
+Preview of Song: https://p.scdn.co/mp3-preview/cd2cbb179aa6c64beefd57d01ac7aaf5c4df104b?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next (Instrumental)
+----------------
+Artist: Ethaniel
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/67a10920b9a7e51ec6213d89e2dc8422f051bcf5?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next
+----------------
+Artist: Only Fire
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/8536a60b777c58b36a06130c8002927321b6529f?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Cumshots Fired
+----------------
+The devil Wears Prada
+----------------
+Title: The Devil Wears Prada
+Release Year: 2006
+IMDB Rating: 6.9/10
+Rotten Tomatoes Rating: 76%
+Country: USA, France
+Language: English, French
+Plot: A smart but sensible new graduate lands a job as an assistant to Miranda Priestly, the demanding editor-in-chief of a high fashion magazine.
+Actors: Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci
+----------------
+arianna grande
+----------------
+Venue: Times Union Center
+Location: Albany, NY, United States
+Date: 03/18/2019
+----------------
+Venue: TD Garden
+Location: Boston, MA, United States
+Date: 03/20/2019
+----------------
+Venue: KeyBank Center
+Location: Buffalo, NY, United States
+Date: 03/22/2019
+----------------
+Venue: Capitol One Arena
+Location: Washington, DC, United States
+Date: 03/25/2019
+----------------
+Venue: Wells Fargo Center
+Location: Philadelphia, PA, United States
+Date: 03/26/2019
+----------------
+Venue: Quicken Loans Arena
+Location: Cleveland, OH, United States
+Date: 03/28/2019
+----------------
+Venue: Mohegan Sun Arena
+Location: Uncasville, CT, United States
+Date: 03/30/2019
+----------------
+Venue: Bell Centre
+Location: Montréal, Canada
+Date: 04/01/2019
+----------------
+Venue: Scotiabank Arena
+Location: Toronto, Canada
+Date: 04/03/2019
+----------------
+Venue: Little Caesars Arena
+Location: Detroit, MI, United States
+Date: 04/05/2019
+----------------
+Venue: United Center
+Location: Chicago, IL, United States
+Date: 04/07/2019
+----------------
+Venue: The Schottenstein Center
+Location: Columbus, OH, United States
+Date: 04/10/2019
+----------------
+Venue: Bankers Life Fieldhouse
+Location: Indianapolis, IN, United States
+Date: 04/12/2019
+----------------
+Venue: Enterprise Center
+Location: St. Louis, MO, United States
+Date: 04/13/2019
+----------------
+Venue: Fiserv Forum
+Location: Milwaukee, WI, United States
+Date: 04/15/2019
+----------------
+Venue: Xcel Energy Center
+Location: St Paul, MN, United States
+Date: 04/17/2019
+----------------
+Venue: CHI Health Center
+Location: Omaha, NE, United States
+Date: 04/18/2019
+----------------
+Venue: Pepsi Center
+Location: Denver, CO, United States
+Date: 04/20/2019
+----------------
+Venue: Vivint Smart Home Arena
+Location: Salt Lake City, UT, United States
+Date: 04/22/2019
+----------------
+Venue: Rogers Place
+Location: Edmonton, Canada
+Date: 04/25/2019
+----------------
+Venue: Rogers Arena
+Location: Vancouver, Canada
+Date: 04/27/2019
+----------------
+Venue: Moda Center
+Location: Portland, OR, United States
+Date: 04/30/2019
+----------------
+Venue: SAP Center
+Location: San Jose, CA, United States
+Date: 05/02/2019
+----------------
+Venue: Golden 1 Center
+Location: Sacramento, CA, United States
+Date: 05/03/2019
+----------------
+Venue: STAPLES Center
+Location: Los Angeles, CA, United States
+Date: 05/06/2019
+----------------
+Venue: The Forum
+Location: Los Angeles, CA, United States
+Date: 05/10/2019
+----------------
+Venue: Talking Stick Resort Arena
+Location: Phoenix, AZ, United States
+Date: 05/14/2019
+----------------
+Venue: AT&T Center
+Location: San Antonio, TX, United States
+Date: 05/17/2019
+----------------
+Venue: Toyota Center
+Location: Houston, TX, United States
+Date: 05/19/2019
+----------------
+Venue: American Airlines Center
+Location: Dallas, TX, United States
+Date: 05/21/2019
+----------------
+Venue: Chesapeake Energy Arena
+Location: Oklahoma City, OK, United States
+Date: 05/23/2019
+----------------
+Venue: Smoothie King Center
+Location: New Orleans, LA, United States
+Date: 05/25/2019
+----------------
+Venue: Amalie Arena
+Location: Tampa, FL, United States
+Date: 05/28/2019
+----------------
+Venue: Amway Center
+Location: Orlando, FL, United States
+Date: 05/29/2019
+----------------
+Venue: American Airlines Arena
+Location: Miami, FL, United States
+Date: 05/31/2019
+----------------
+Venue: PNC Arena
+Location: Raleigh, NC, United States
+Date: 06/04/2019
+----------------
+Venue: Bridgestone Arena
+Location: Nashville, TN, United States
+Date: 06/07/2019
+----------------
+Venue: State Farm Arena
+Location: Atlanta, GA, United States
+Date: 06/08/2019
+----------------
+Venue: Spectrum Center
+Location: Charlotte, NC, United States
+Date: 06/10/2019
+----------------
+Venue: PPG Paints Arena
+Location: Pittsburgh, PA, United States
+Date: 06/12/2019
+----------------
+Venue: Barclays Center
+Location: Brooklyn, NY, United States
+Date: 06/14/2019
+----------------
+Venue: Madison Square Garden
+Location: New York, NY, United States
+Date: 06/18/2019
+----------------
+thank u, next
+----------------
+Artist: Ariana Grande
+Song Name: thank u, next
+Preview of Song: null
+Album Name: thank u, next
+----------------
+Artist: Ariana Grande
+Song Name: thank u, next
+Preview of Song: null
+Album Name: thank u, next
+----------------
+Artist: YONAS
+Song Name: thank u, next - Remix
+Preview of Song: https://p.scdn.co/mp3-preview/53752eae19b82e392f9c98fdac77ef65fed842a5?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next (Remix)
+----------------
+Artist: Joseph Vincent
+Song Name: thank u, next
+Preview of Song: https://p.scdn.co/mp3-preview/9509aa587980ebd8b6c12d9b4a404b0bb9dd42b2?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next
+----------------
+Artist: Jason Chen
+Song Name: thank u, next
+Preview of Song: https://p.scdn.co/mp3-preview/17e07fc1832f9dbe52d22b2682fbc883cce385c7?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next
+----------------
+Artist: Davina Michelle
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/6cc26ee5c11d8e396a46fdef926f36ce706c2cf2?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next
+----------------
+Artist: Emma Heesters
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/4003223a6b08e5bb7eb4f5e1d2e7d4cf8520dbab?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next
+----------------
+Artist: Oliviya Nicole
+Song Name: thank u, next
+Preview of Song: https://p.scdn.co/mp3-preview/b903e6065540cf511a8a0c3efe8e19d8e7d45090?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next
+----------------
+Artist: 8-Bit Arcade
+Song Name: Thank U, Next (8-Bit Ariana Grande Emulation)
+Preview of Song: https://p.scdn.co/mp3-preview/767a8158cbf9efd3aced0fb9c6bf8d841da940c6?cid=5f8211b2042544179e780b7160dac35e
+Album Name: By Request, Vol. 12
+----------------
+Artist: Fly By Nightcore
+Song Name: thank u, next
+Preview of Song: https://p.scdn.co/mp3-preview/cc62e942a414b8cad316a064296d8c4856cd1cfe?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next
+----------------
+Artist: Alexander Stewart
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/9c87b98cfe323b9da769cba806836a8cc46f8406?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next
+----------------
+Artist: Jonah Baker
+Song Name: thank u, next (Acoustic Version)
+Preview of Song: https://p.scdn.co/mp3-preview/74e4e361c3847d3e18b37a7fd4d2281aec61b287?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next (Acoustic Version)
+----------------
+Artist: DJ Boomin
+Song Name: Thank u, next - Instrumental
+Preview of Song: https://p.scdn.co/mp3-preview/1ea45574ea4c7f79db290005bc22e07f568fc54f?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank u, next
+----------------
+Artist: Ebony Day
+Song Name: thank u, next - Acoustic
+Preview of Song: https://p.scdn.co/mp3-preview/378e670fe2f0aebb0e1c7a9197108478167c6b70?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next (Acoustic)
+----------------
+Artist: The Trap Remix Guys
+Song Name: Thank U, Next - Trap Remix Homage to Ariana Grande
+Preview of Song: https://p.scdn.co/mp3-preview/e4017dd1f6483a3b8921458d32a768e601928a4d?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next (Trap Remix Homage to Ariana Grande)
+----------------
+Artist: Halocene
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/ae0dcfbeb10f82e16ec121409ec95c14910607c3?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next
+----------------
+Artist: The Blue Notes
+Song Name: thank u, next
+Preview of Song: https://p.scdn.co/mp3-preview/472013f1e2065da7c155781b30b0638ce2604b7c?cid=5f8211b2042544179e780b7160dac35e
+Album Name: thank u, next (Piano Rendition)
+----------------
+Artist: Metrixx
+Song Name: Thank U, Next - Instrumental
+Preview of Song: https://p.scdn.co/mp3-preview/cd2cbb179aa6c64beefd57d01ac7aaf5c4df104b?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next (Instrumental)
+----------------
+Artist: Ethaniel
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/67a10920b9a7e51ec6213d89e2dc8422f051bcf5?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Thank U, Next
+----------------
+Artist: Only Fire
+Song Name: Thank U, Next
+Preview of Song: https://p.scdn.co/mp3-preview/8536a60b777c58b36a06130c8002927321b6529f?cid=5f8211b2042544179e780b7160dac35e
+Album Name: Cumshots Fired
+----------------
+The devil wears prada
+----------------
+Title: The Devil Wears Prada
+Release Year: 2006
+IMDB Rating: 6.9/10
+Rotten Tomatoes Rating: 76%
+Country: USA, France
+Language: English, French
+Plot: A smart but sensible new graduate lands a job as an assistant to Miranda Priestly, the demanding editor-in-chief of a high fashion magazine.
+Actors: Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci
+----------------

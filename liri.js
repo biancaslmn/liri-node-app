@@ -1,18 +1,26 @@
+//Require dotenv npm to link Spotify keys file
 require("dotenv").config();
 
-// variables
+//Require keys.js file
+var keys = require("./keys.js");
 
-var spotify = require("node-spotify-api");
+//Require request npm
+var request = require("request")
 
-var keys = require (".env");
+//Require spotify npm
+var Spotify = require('node-spotify-api');
+//Save spotify key to a variable
+var spotify = new Spotify(keys.spotify);
 
-var request = require ("request");
+//Require moment npm
+var moment = require('moment');
+moment().format();
 
-var moment = require ("moment");
+var fs = require("fs")
 
-var inquirer = require("inquirer");
-
-new spotify = new spotify (keys.spotify);
+var nodeArgs = process.argv;
+var userInput = "";
+var prettyUserInput = "";
 
 // COMMANDS
 // -----------------------------------
@@ -22,150 +30,360 @@ new spotify = new spotify (keys.spotify);
 // do-what-it-says
 //-------------------------------------
 
-var artistNames = function(artist) {
-    return artist.name;
-  };
-  
-  // Search Spotify
-  var searchSpotify = function(musicName) {
-    if (musicName === undefined) {
-      musicName = "Eyes on fire";
+//Get user input for song/artist/movie name
+//Loop starting at process.argv[3]
+for (var i = 3; i < nodeArgs.length; i++) {
+    //If userInput is more than 1 word
+    if (i > 3 && i < nodeArgs.length) {
+        userInput = userInput + "%20" + nodeArgs[i];
     }
+    //If userInput is only 1 word
+    else {
+        userInput += nodeArgs[i];
+    }
+}
 
-    spotify.search(
-        {
-          type: "track",
-          query: musicName
-        },
-        function(err, data) {
-          if (err) {
-            console.log("Error occurred: " + err);
-            return;
-          }
-    
-          var songs = data.tracks.items;
-    
-          for (var i = 0; i < songs.length; i++) {
-            console.log(i);
-            console.log("artist(s): " + songs[i].artists.map(artistNames));
-            console.log("song name: " + songs[i].name);
-            console.log("preview song: " + songs[i].preview_url);
-            console.log("album: " + songs[i].album.name);
-            console.log("==============================================");
-          }
-        }
-      );
-    };
+//Remove %20 when pushing to log.txt
+for (var i = 3; i < nodeArgs.length; i++) {
+    prettyUserInput = userInput.replace(/%20/g, " ");
+}
 
-    // Search Bands in town
-
-    var findBands = function(artist) {
-        var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
-      
-        request(queryURL, function(error, response, body) {
-          if (!error && response.statusCode === 200) {
-            var jsonData = JSON.parse(body);
-      
-            if (!jsonData.length) {
-              console.log("Sorry, we couldn't find any results matching " + artist);
-              return;
+var userCommand = process.argv[2];
+//Switch statement for commands
+function runLiri() {
+    switch (userCommand) {
+        case "concert-this":
+            //Append userInput to log.txt
+            fs.appendFileSync("log.txt", prettyUserInput + "\n----------------\n", function (error) {
+                if (error) {
+                    console.log(error);
+                };
+            });
+            //Run request to bandsintown with the specified artist
+            var queryURL = "https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp"
+            request(queryURL, function (error, response, body) {
+                //If no error and response is a success
+                if (!error && response.statusCode === 200) {
+                    //Parse the json response
+                    var data = JSON.parse(body);
+                    //Loop through array
+                    for (var i = 0; i < data.length; i++) {
+                        //Get venue name
+                        console.log("Venue: " + data[i].venue.name);
+                        //Append data to log.txt
+                        fs.appendFileSync("log.txt", "Venue: " + data[i].venue.name + "\n", function (error) {
+                            if (error) {
+                                console.log(error);
+                            };
+                        });
+                        //Get venue location
+                        //If statement for concerts without a region
+                        if (data[i].venue.region == "") {
+                            console.log("Location: " + data[i].venue.city + ", " + data[i].venue.country);
+                            //Append data to log.txt
+                            fs.appendFileSync("log.txt", "Location: " + data[i].venue.city + ", " + data[i].venue.country + "\n", function (error) {
+                                if (error) {
+                                    console.log(error);
+                                };
+                            });
+                        } else {
+                            console.log("Location: " + data[i].venue.city + ", " + data[i].venue.region + ", " + data[i].venue.country);
+                            //Append data to log.txt
+                            fs.appendFileSync("log.txt", "Location: " + data[i].venue.city + ", " + data[i].venue.region + ", " + data[i].venue.country + "\n", function (error) {
+                                if (error) {
+                                    console.log(error);
+                                };
+                            });
+                        }
+                        //Get date of show
+                        var date = data[i].datetime;
+                        date = moment(date).format("MM/DD/YYYY");
+                        console.log("Date: " + date)
+                        //Append data to log.txt
+                        fs.appendFileSync("log.txt", "Date: " + date + "\n----------------\n", function (error) {
+                            if (error) {
+                                console.log(error);
+                            };
+                        });
+                        console.log("----------------")
+                    }
+                }
+            });
+            break;
+        case "spotify-this-song":
+            //If statement for no song provided
+            if (!userInput) {
+                userInput = "Eyes on fire";
+                prettyUserInput = userInput.replace(/%20/g, " ");
             }
-      
-            console.log("Upcoming events for " + artist + ":");
-      
-            for (var i = 0; i < jsonData.length; i++) {
-              var event = jsonData[i];
-      
-  // Log time/location of show
-  console.log(
-      event.venue.city +
-      "," +
-      (event.venue.country) +
-      " at " +
-      event.venue.name +
-      " " +
-      moment(event.datetime).format("MM/DD/YYYY")
-  );
-}
-}
-});
-};
-
-// Search Movie
-
-var findMovie = function(movieName) {
-    if (movieName === undefined) {
-      movieName = "The Devil Wears Prada";
+            //Append userInput to log.txt
+            fs.appendFileSync("log.txt", prettyUserInput + "\n----------------\n", function (error) {
+                if (error) {
+                    console.log(error);
+                };
+            });
+            spotify.search({
+                type: "track",
+                query: userInput
+            }, function (err, data) {
+                if (err) {
+                    console.log("Error occured: " + err)
+                }
+                //Assign data being used to a variable
+                var info = data.tracks.items
+                // console.log(info);
+                //Loop through all the "items" array
+                for (var i = 0; i < info.length; i++) {
+                    //Store "album" object to variable
+                    var albumObject = info[i].album;
+                    var trackName = info[i].name
+                    var preview = info[i].preview_url
+                    //Store "artists" array to variable
+                    var artistsInfo = albumObject.artists
+                    //Loop through "artists" array
+                    for (var j = 0; j < artistsInfo.length; j++) {
+                        console.log("Artist: " + artistsInfo[j].name)
+                        console.log("Song Name: " + trackName)
+                        console.log("Preview of Song: " + preview)
+                        console.log("Album Name: " + albumObject.name)
+                        console.log("----------------")
+                        //Append data to log.txt
+                        fs.appendFileSync("log.txt", "Artist: " + artistsInfo[j].name + "\nSong Name: " + trackName + "\nPreview of Song: " + preview + "\nAlbum Name: " + albumObject.name + "\n----------------\n", function (error) {
+                            if (error) {
+                                console.log(error);
+                            };
+                        });
+                    }
+                }
+            })
+            break;
+        case "movie-this":
+            //If statement for no movie provided
+            if (!userInput) {
+                userInput = "The Devil Wears Prada";
+                prettyUserInput = userInput.replace(/%20/g, " ");
+            }
+            //Append userInput to log.txt
+            fs.appendFileSync("log.txt", prettyUserInput + "\n----------------\n", function (error) {
+                if (error) {
+                    console.log(error);
+                };
+            });
+            //Run request to OMDB
+            var queryURL = "https://www.omdbapi.com/?t=" + userInput + "&y=&plot=short&apikey=trilogy"
+            request(queryURL, function (error, response, body) {
+                if (!error && response.statusCode === 200) {
+                    var info = JSON.parse(body);
+                    console.log("Title: " + info.Title)
+                    console.log("Release Year: " + info.Year)
+                    console.log("IMDB Rating: " + info.Ratings[0].Value)
+                    console.log("Rotten Tomatoes Rating: " + info.Ratings[1].Value)
+                    console.log("Country: " + info.Country)
+                    console.log("Language: " + info.Language)
+                    console.log("Plot: " + info.Plot)
+                    console.log("Actors: " + info.Actors)
+                    //Append data to log.txt
+                    fs.appendFileSync("log.txt", "Title: " + info.Title + "\nRelease Year: " + info.Year + "\nIMDB Rating: " + info.Ratings[0].Value + "\nRotten Tomatoes Rating: " +
+                        info.Ratings[1].Value + "\nCountry: " + info.Country + "\nLanguage: " + info.Language + "\nPlot: " + info.Plot + "\nActors: " + info.Actors + "\n----------------\n",
+                        function (error) {
+                            if (error) {
+                                console.log(error);
+                            };
+                        });
+                }
+            });
+            break;
     }
-  
-    var urlLink =
-      "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=full&tomatoes=true&apikey=trilogy";
+}
 
-      request(urlLink, function(error, response, body) {
-        if (!error && response.statusCode === 200) {
-          var jsonData = JSON.parse(body);
-    
-          console.log("Title: " + jsonData.Title);
-          console.log("Year: " + jsonData.Year);
-          console.log("Rated: " + jsonData.Rated);
-          console.log("IMDB Rating: " + jsonData.imdbRating);
-          console.log("Country: " + jsonData.Country);
-          console.log("Language: " + jsonData.Language);
-          console.log("Plot: " + jsonData.Plot);
-          console.log("Actors: " + jsonData.Actors);
-          console.log("Rotten Tomatoes Rating: " + jsonData.Ratings[1].Value);
+if (userCommand == "do-what-it-says") {
+    var fs = require("fs");
+    //Read random.txt file
+    fs.readFile("random.txt", "utf8", function (error, data) {
+        if (error) {
+            return console.log(error)
         }
-      });
-    };
+        //Split data into array
+        var textArr = data.split(",");
+        userCommand = textArr[0];
+        userInput = textArr[1];
+        prettyUserInput = userInput.replace(/%20/g, " ");
+        runLiri();
+    })
+}
 
-    // Taking text to call Liri commands
-    var takeAction = function() {
-        fs.readFile("random.txt", function(error, data) {
-          console.log(data);
-      
-          var dataArr = data.split(",");
-      
-          if (dataArr.length === 2) {
-            pick(dataArr[0], dataArr[1]);
-          } else if (dataArr.length === 1) {
-            pick(dataArr[0]);
-          }
-        });
-      };
+runLiri();
 
-      //
-      
 
-      //
+////////////////////////////////////////////////////////
+// require("dotenv").config();
 
-      //Execute functions
-      var runApp = function(firstArg, secondArg) {
-        pick(firstArg, secondArg);
-      };
-      runApp(process.argv[2], process.argv.slice(3).join(" "));
+// // variables
 
-      console.log ("Hello, my name is Liri. I'm here to assist you with entertainment related questions like, information about artists, movies and events ")
+// var spotify = require("node-spotify-api");
 
-      inquirer
-  .prompt([
+// var keys = require (".env");
 
-    {
-      type: "input",
-      message: "What is your name?",
-      name: "username"
-    },
+// var request = require ("request");
+
+// var moment = require ("moment");
+
+// var inquirer = require("inquirer");
+
+// new spotify = new spotify (keys.spotify);
+
+// // COMMANDS
+// // -----------------------------------
+// // concert-this
+// // spotify-this-song
+// // movie-this
+// // do-what-it-says
+// //-------------------------------------
+
+// var artistNames = function(artist) {
+//     return artist.name;
+//   };
+  
+//   // Search Spotify
+//   var searchSpotify = function(musicName) {
+//     if (musicName === undefined) {
+//       musicName = "Eyes on fire";
+//     }
+
+//     spotify.search(
+//         {
+//           type: "track",
+//           query: musicName
+//         },
+//         function(err, data) {
+//           if (err) {
+//             console.log("Error occurred: " + err);
+//             return;
+//           }
     
-    {
-      type: "list",
-      message: "Which action do you choose?",
-      choices: ["", "", ""],
-      name: ""
-    },
-    // Here we ask the user to confirm.
-    {
-      type: "confirm",
-      message: "Are you sure:",
-      name: "confirm",
-      default: true
-    }
-  ])
+//           var songs = data.tracks.items;
+    
+//           for (var i = 0; i < songs.length; i++) {
+//             console.log(i);
+//             console.log("artist(s): " + songs[i].artists.map(artistNames));
+//             console.log("song name: " + songs[i].name);
+//             console.log("preview song: " + songs[i].preview_url);
+//             console.log("album: " + songs[i].album.name);
+//             console.log("==============================================");
+//           }
+//         }
+//       );
+//     };
+
+//     // Search Bands in town
+
+//     var findBands = function(artist) {
+//         var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
+      
+//         request(queryURL, function(error, response, body) {
+//           if (!error && response.statusCode === 200) {
+//             var jsonData = JSON.parse(body);
+      
+//             if (!jsonData.length) {
+//               console.log("Sorry, we couldn't find any results matching " + artist);
+//               return;
+//             }
+      
+//             console.log("Upcoming events for " + artist + ":");
+      
+//             for (var i = 0; i < jsonData.length; i++) {
+//               var event = jsonData[i];
+      
+//   // Log time/location of show
+//   console.log(
+//       event.venue.city +
+//       "," +
+//       (event.venue.country) +
+//       " at " +
+//       event.venue.name +
+//       " " +
+//       moment(event.datetime).format("MM/DD/YYYY")
+//   );
+// }
+// }
+// });
+// };
+
+// // Search Movie
+
+// var findMovie = function(movieName) {
+//     if (movieName === undefined) {
+//       movieName = "The Devil Wears Prada";
+//     }
+  
+//     var urlLink =
+//       "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=full&tomatoes=true&apikey=trilogy";
+
+//       request(urlLink, function(error, response, body) {
+//         if (!error && response.statusCode === 200) {
+//           var jsonData = JSON.parse(body);
+    
+//           console.log("Title: " + jsonData.Title);
+//           console.log("Year: " + jsonData.Year);
+//           console.log("Rated: " + jsonData.Rated);
+//           console.log("IMDB Rating: " + jsonData.imdbRating);
+//           console.log("Country: " + jsonData.Country);
+//           console.log("Language: " + jsonData.Language);
+//           console.log("Plot: " + jsonData.Plot);
+//           console.log("Actors: " + jsonData.Actors);
+//           console.log("Rotten Tomatoes Rating: " + jsonData.Ratings[1].Value);
+//         }
+//       });
+//     };
+
+//     // Taking text to call Liri commands
+//     var takeAction = function() {
+//         fs.readFile("random.txt", function(error, data) {
+//           console.log(data);
+      
+//           var dataArr = data.split(",");
+      
+//           if (dataArr.length === 2) {
+//             pick(dataArr[0], dataArr[1]);
+//           } else if (dataArr.length === 1) {
+//             pick(dataArr[0]);
+//           }
+//         });
+//       };
+
+//       //
+      
+
+//       //
+
+//       //Execute functions
+//       var runApp = function(firstArg, secondArg) {
+//         pick(firstArg, secondArg);
+//       };
+//       runApp(process.argv[2], process.argv.slice(3).join(" "));
+
+//       console.log ("Hello, my name is Liri. I'm here to assist you with entertainment related questions like, information about artists, movies and events ")
+
+//       inquirer
+//   .prompt([
+
+//     {
+//       type: "input",
+//       message: "What is your name?",
+//       name: "username"
+//     },
+    
+//     {
+//       type: "list",
+//       message: "Which action do you choose?",
+//       choices: ["", "", ""],
+//       name: ""
+//     },
+//     // Here we ask the user to confirm.
+//     {
+//       type: "confirm",
+//       message: "Are you sure:",
+//       name: "confirm",
+//       default: true
+//     }
+//   ])
